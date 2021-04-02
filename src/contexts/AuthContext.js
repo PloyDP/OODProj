@@ -75,11 +75,6 @@ export function AuthProvider({ children }) {
             localStorage.setItem('owner', snapshot.val().role.owner)
             localStorage.setItem('emaillogin', email)
         })
-        // database.ref("users").child(data.user.uid).update({"LoginDate": moment().format("DD-MM-YYYY hh:mm:ss")})
-        // localStorage.setItem('admin', database.ref("users").child(data.user.uid).child("role").child("admin"))
-        // localStorage.setItem('owner', database.ref("users").child(data.user.uid).child("role").child("owner"))
-        // localStorage.setItem('reviewer', database.ref("users").child(data.user.uid).child("role").child("reviewer"))
-        // localStorage.setItem('emaillogin', email)
       }
     )
   }
