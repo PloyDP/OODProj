@@ -1,22 +1,21 @@
 import firebase from '../config/firebase'
-import React, { Component, useState} from "react";
+import React, { Component } from "react";
 import _ from 'lodash';
 import "./ResRegistInfo.css"
 
 import NavbarLogout from "./NavbarLogout"
-import { Button , Navbar , Nav , NavDropdown , FormControl , Form , Alert } from 'react-bootstrap';
+// import { Button , Navbar , Nav , NavDropdown , FormControl , Form , Alert } from 'react-bootstrap';
 
 class ResRegistInfo extends Component {
   constructor(props){
       super(props);
-      
       this.state = {
           Resinfo:[],
           usercard: null,
       };
   }
 
-  componentDidMount(){
+  sendingRequest(){
     let app = firebase.database().ref('Restaurants/'+ this.props.match.params.key);
         app.on('value', snapshot => {
             console.log(snapshot.val());
