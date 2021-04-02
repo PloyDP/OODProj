@@ -6,7 +6,7 @@ import NavbarLogout from "./NavbarLogout"
 //import './style.css'
 import './ResRegistInfo.css'
 class ApprovalList extends Component {
-// class ResOwnerList extends Component {
+
   constructor(props){
     super(props);
     this.state = {
