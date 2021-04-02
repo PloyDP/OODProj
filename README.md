@@ -1,3 +1,28 @@
+**การทดสอบระบบรีวิวร้านอาหาร**
+
+## ทดสอบแบบผู้รีวิว
+
+สามารถลงทะเบียนผู้ใช้งานหรือใช้บัญชีผู้ใช้ต่อไปนี้เพื่อเข้าสู่ระบบ<br />
+email: reviewer@testcom<br />
+password: 123456789<br />
+
+## ทดสอบแบบเจ้าของร้านอาหาร
+
+สามารถลงทะเบียนผู้ใช้งานหรือใช้บัญชีผู้ใช้ต่อไปนี้เพื่อเข้าสู่ระบบ<br />
+email: owner3@testcom<br />
+password: 123456789<br />
+
+## ทดสอบแบบแอดมิน
+
+ไม่สามารถสมัครบัญชีผู้ใช้ได้เอง สามารถใช้บัญชีผู้ใช้ดังต่อไปนี้เพื่อเข้าสู่ระบบ<br />
+email: admin@testcom<br />
+password: 123456789<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
