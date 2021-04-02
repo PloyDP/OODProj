@@ -1,5 +1,7 @@
 **การทดสอบระบบรีวิวร้านอาหาร**
 
+สามารถเข้าชมเว็บไซต์ได้ที่ https://ood-proj.firebaseapp.com<br />
+
 ## ทดสอบแบบผู้รีวิว
 
 สามารถลงทะเบียนผู้ใช้งานหรือใช้บัญชีผู้ใช้ต่อไปนี้เพื่อเข้าสู่ระบบ<br />
@@ -17,11 +19,6 @@ password: 123456789<br />
 ไม่สามารถสมัครบัญชีผู้ใช้ได้เอง สามารถใช้บัญชีผู้ใช้ดังต่อไปนี้เพื่อเข้าสู่ระบบ<br />
 email: admin@testcom<br />
 password: 123456789<br />
-<br />
-<br />
-<br />
-<br />
-<br />
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
