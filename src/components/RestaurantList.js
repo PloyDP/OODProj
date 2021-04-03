@@ -1,10 +1,9 @@
-
 import React, { useState , Component } from "react";
 
 // import {firebase,storage} from '../firebase'
 import firebase from "firebase/app";
 import "firebase/database";
-import { storage } from "../config/firebase";
+// import { storage } from "../firebase";
 
 import { Link } from 'react-router-dom';
 import './RestaurantList.css';
@@ -112,12 +111,8 @@ getrid(rid=null){
 
 
   render() {
-
-
+    
     return (
-      
-      <div>
-      <NavbarLogout/>
       <div className="app">
           <div className="container" style={{marginTop:70}}>
             <div class="header">
@@ -136,7 +131,7 @@ getrid(rid=null){
               return (
                 
                   <tr>
-                    <td><Link to ={`/Res/${item.rid}`} onClick={() => this.getrid(item.rid) } className='link' >{item.Name}</Link></td>
+                    <td><Link to ={`/Res/`} onClick={() => this.getrid(item.rid) } className='link' >{item.Name}</Link></td>
                     
                     <td><Link to={`/Showdetail/${item.rid}`} className="btn btn-warning btn-sm" onClick={() => this.handleUpdate(item.rid,item.Name,item.TypeofFood,item.Address,item.Price,item.Phone,item.Email,item.Facebook,item.Line,item.TypeofService,item.TypeofCountryFood,item.TypeofRes)}>Edit</Link></td>
                     <td><button className="btn btn-danger btn-sm" onClick={() => this.removeItem(item.rid)}>Delete</button></td>
@@ -145,7 +140,6 @@ getrid(rid=null){
                     
                     
                   </tr>
-                  
                   
               )
             })
@@ -158,7 +152,6 @@ getrid(rid=null){
           </div>
          
 
-            </div>
             </div>
         
 

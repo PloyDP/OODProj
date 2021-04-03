@@ -1,4 +1,3 @@
-
 import React, { useState , Component } from "react";
 // import firebase,{storage} from '../firebase'
 import { Link } from 'react-router-dom';
@@ -387,7 +386,7 @@ removeItem8(){
       <div className="app">
 
           <div className="container" style={{marginTop:70}}>
-            <div class="Editpicheader">
+            <div class="header">
                   <h2>Upload Pictures</h2>
               </div>
         <br/> 
@@ -462,8 +461,8 @@ removeItem8(){
                     </div>
           </div>
           
-                <br/>
-                <div className="Editpiccol">
+
+                <div className="col">
                   
                           <Link to ={`/RestaurantList`} class="btn btn-primary" > Go to Restaurant List </Link>      
                 </div>
@@ -476,4 +475,3 @@ removeItem8(){
 }
  
 export default Showdetail;
-

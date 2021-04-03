@@ -9,13 +9,15 @@ import "firebase/database";
 export default function CheckRoleBox(props) {
     const user = firebase.auth().currentUser;
     const [reviewer, setReviwer] = useState()
- 
     
-    var db = fb.database().ref('users/' + user.uid);
-    db.once('value').then((snapshot) => {
-        console.log('role',snapshot.val())
-        setReviwer(snapshot.child("role").child("reviewer").val())
-    })
+    if (user != null){
+        var db = fb.database().ref('users/' + user.uid);
+        db.once('value').then((snapshot) => {
+            console.log('role',snapshot.val())
+            setReviwer(snapshot.child("role").child("reviewer").val())
+        })
+    }
+    
 
     if (reviewer === true) {
         return(
